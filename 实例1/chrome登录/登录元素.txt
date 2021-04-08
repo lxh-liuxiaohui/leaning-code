@@ -1,0 +1,21 @@
+*** Settings ***
+Library           SeleniumLibrary
+
+*** Keywords ***
+输入用户名
+    [Arguments]    ${un}
+    Input Text    id=email    ${un}
+
+输入密码
+    [Arguments]    ${pw}
+    Input Text    id=password    ${pw}
+
+点击登录按钮
+    Click Element    Xpath=//*[@id="root"]/div/div[1]/div/div/div[2]/div[2]/form/div/div[5]/div/div/div/div/button
+
+点击退出按钮
+    Click Element    Xpath=//*[@id="header"]/div[3]/a[2]/span
+
+输入验证码
+    [Arguments]    ${ma}
+    Input Text    id=captcha    ${ma}

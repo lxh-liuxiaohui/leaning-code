@@ -1,0 +1,17 @@
+*** Settings ***
+Library           SeleniumLibrary
+
+*** Keywords ***
+输入用户名
+    [Arguments]    ${un}
+    Input Text    name=j_username    ${un}
+
+输入密码
+    [Arguments]    ${pw}
+    Input Text    name=j_password    ${pw}
+
+点击登录按钮
+    Click Element    Xpath=//input[@class="submit-button primary "]
+
+点击退出按钮
+    Click Element    Xpath=//*[@id="header"]/div[3]/a[2]/span

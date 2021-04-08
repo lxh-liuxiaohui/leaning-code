@@ -1,0 +1,7 @@
+*** Variables ***
+${username}       133@qq.com
+${password}       111111
+${url}            https://ghy-askwnm-test.gobestsoft.cn
+${renwumingcheng}    管理后台
+${numbers}        //*[@id="j-add-item-type-standalone-projects"]/ul/li[1]
+${yan}            pange
